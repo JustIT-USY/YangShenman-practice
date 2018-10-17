@@ -1,25 +1,64 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-int avg(int n)
+float sum;
+void Add(float op1,float op2)
 {
-    int sum=0;
-    int data;
-    int i=n;
-    printf("请输入%d个数据：\n",n);
-    while(i>0)
-    {
-        scanf("%d",&data);
-        sum+=data;
-        i--;
-    }
-    int avg=sum/n;
-    return avg;
+    sum = (float)op1 + op2;
+    printf("%.2f\n",sum);
+
+
 }
+   void Sub(float op1,float op2)
+{
+    sum = op1 - op2;
+     printf("%.2f\n",sum);
+
+}
+    void Mult(float op1,float op2)
+{
+    sum = op1 * op2;
+     printf("%.2f\n",sum);
+
+}
+  void Div(float op1,float op2)
+{
+    if (op2 == 0)
+     printf("被除数不能为0!");
+     else{
+        sum =op1/op2;
+        printf("%.2f\n",sum);
+
+     }
+
+}
+
+
 int main()
 {
-    int n=3,a=0;
-    a=avg(n);                   //函数调用
-    printf("这%d个数据的平均值为：%d\n",n,a);
+    float op1,op2;
+    char ch;
+    while (1)
+    {
+        scanf("%f%c%f",&ch,&op2);
+        swich(ch)
+        {
+        case '+':
+            Add (op1,op2);
+            break;
+            case '-':
+             Sum (op1,op2);
+            break;
+            case '*':
+             Mult (op1,op2);
+            break;
+            case '/':
+             Div (op1,op2);
+            break;
+            default:
+                break;
+
+        }
+    }
+
     return 0;
 }
