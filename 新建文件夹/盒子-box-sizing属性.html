@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子-box-sizing属性</title>
+    <style>
+        .content{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        .aside{
+            width: 100px;
+            height: 200px;
+            background-color:green;
+           float:left; /* 浮动标签向左*/
+        }
+        .article{
+            /*box-sizing:content-box  给盒子取值 时加padding和border属性不会超出盒子的范围 content-box  是默认取值不变 border-box;*/
+            box-sizing:border-box  ;
+            width: 200px;
+            height: 200px;
+            background-color:blue;
+            float:right;
+            padding: 20px;
+            border: 20px solid #000;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="aside"></div>
+    <div class="article"></div>
+</div>
+</body>
+</html>

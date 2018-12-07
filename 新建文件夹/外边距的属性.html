@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>外边距的属性</title>
+    <style>
+        *{
+            padding: 0 /**/
+
+        }
+       span {
+           display: inline-block;   /*有这一句才可以设置外边款span的宽高*/
+           width: 100px;
+           height: 100px;
+           border: 1px solid #000;/* 这是设置边框必须有的宽度/样式/颜色 bd+*/
+        }
+        div{
+            height: 100px;
+            border: 1px solid #000;
+        }
+        .box1{
+            margin-top: 10px;/*u快捷键mt10 下面的同理*/
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 18px;
+        }
+        .box2{
+            margin:10px 20px 30px 40px;
+        }
+    </style>
+</head>
+<body><!-- span.box&{我是span}*3 快捷键-->
+   <span class="box1">我是span</span><span class="box2">我是span</span><span class="box3">我是span</span>
+<div>我是外边距</div>
+</body>
+<!--
+外边框是 标签和标签的距离 外边距没有背景颜色
+格式
+非连写
+margin-top:;
+margin-right: ;
+margin-bottom: ;
+margin-left: ;
+连写
+margin-top:上 右 下 左 ; 可以省略左边那么就会和左边的一样的边框一样 上和下一样
+
+注意点： margin：0 auto 方式让盒子在嵌套中水平居中 0 是可以任意写值  如 ： margin：159pxauto 对竖直方向无效
+-->

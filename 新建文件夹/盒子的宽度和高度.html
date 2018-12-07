@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子的模型宽度和高度</title>
+    <style>
+     .box1{
+         width: 100px;
+         padding: 20px;
+         border: 1px solid #000;
+         background-color: green;
+     }
+        .box2{
+            width: 100px;
+            height: 98px;
+            border: 1px solid #000;
+        }
+        .box3{
+            width: 97px;
+            height: 99px;
+            background-color:yellow;
+        }
+        /*判断盒子元素的宽度和高度 下面*/
+        .box4{
+            width: 67px;
+            height: 78px;
+            margin: 10px;
+            background-color: blue;
+        }
+        .box5{
+            width: 90px;
+            height: 98px;
+            border: 25px solid #000;
+        }
+        .box6{
+            width: 170px;
+            height: 89px;
+            padding: 45px;
+
+        }
+        .box7{
+            width: 90px;
+            height: 78px;
+            padding: 12px;
+            background-color:red;
+            border: 19px solid #000;
+        }
+        .box8{
+            width: 90px;
+            height: 78px;
+            padding: 77px;
+            border: 22px solid #000;
+        }
+        .box9{
+            width: 200px;
+            height: 300px;
+            padding: 25px;
+            background-color:red;
+        }
+        .box10{
+            width: 88px;
+            height: 77px;
+            border: 20px solid #000;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">box1</div>
+<div class="box2">box2</div>
+<div class="box3">box3</div>
+<div class="box4">box4</div>
+<div class="box5">box5</div>
+<div class="box6">box6</div>
+<div class="box7">box7</div>
+<div class="box8">box8</div>
+<div class="box9">box7</div>
+<div class="box10">box8</div>
+</body>
+</html>
+<!--
+  1.内容的宽度和高度
+   通过标签的width/ height 属性设置宽度和高度
+
+  2.  元素的宽度和高度
+   宽度=左边框+ 左内边距+width+右边框+右内边距
+    高度一样
+  3 元素空间的宽度的高度
+   宽度=左外边距+左边框+ 左内边距+width+右边框+右内边距+右外边距+左边框
+    高度一样
+-->
