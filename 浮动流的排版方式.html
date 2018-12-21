@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动流的排版方式</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color:red;
+            display: inline-block;
+            float:left;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;    /* 这段是写外边距没有间隙*/
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color:blue;
+            display: inline-block;/*//设置水平的（行） */
+
+            margin-left: 930px;
+
+            float:right;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>
+/*
+  浮动流：
+  float:left/right/
+  水平的排版
+  在浮动流中没有居中就是没有/center/margin:0 auto/
+  不区分行内元素/内块级元素/行内元素
+
+*/
