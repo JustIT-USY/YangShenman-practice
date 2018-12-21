@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动元素的脱标</title>
+    <style>
+        .boa1{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color:hotpink;
+
+        }
+        .boa2{
+            /*float:right;*/
+            width: 150px;
+            height: 150px;
+            background-color:blueviolet;
+
+        }
+    </style>
+</head>
+<body>
+<div class="boa1"></div>
+<div class="boa2"></div>
+</body>
+</html>
+<!--
+ 标准流是直接垂直排版的
+ 浮动元素的脱标：脱离标准流/只设置一个float:left/float:right/
+ 里面的元素会自动重叠
+
+-->
